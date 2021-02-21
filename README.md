@@ -6,8 +6,7 @@ In this lesson we were to use what we learned with JavaScript and create a passw
 
 ## What it looks like
 
-[screenshot]
-(https://github.com/Nmoss3/PasswordGeneratorWk03/issues/1#issue-812950317)
+![image](https://github.com/Nmoss3/PasswordGeneratorWk03/issues/1#issue-812950317)
 
 ## Link to Website
 
