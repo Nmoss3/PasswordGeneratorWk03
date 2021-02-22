@@ -32,7 +32,6 @@ get.addEventListener("click", function () {
 function generatePassword() {
     // Asks for user input
     enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
-    // First if statement for user validation 
     if (!enter) {
         alert("This needs a value");
     } else if (enter < 8 || enter > 128) {
@@ -46,18 +45,14 @@ function generatePassword() {
         confirmUppercase = confirm("Will this contain Uppercase letters?");
         confirmLowercase = confirm("Will this contain Lowercase letters?");
     };
-
-    // Else if for 4 negative options
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
         choices = alert("You must choose a criteria!");
 
     }
-    // Else if for 4 positive options
     else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
 
         choices = character.concat(number, alpha, alpha2);
     }
-    // Else if for 3 positive options
     else if (confirmCharacter && confirmNumber && confirmUppercase) {
         choices = character.concat(number, alpha2);
     }
@@ -120,7 +115,6 @@ function UserInput(ps) {
     document.getElementById("password").textContent = ps;
 
 }
-
 var copy = document.querySelector("#copy");
 copy.addEventListener("click", function () {
     copyPassword();
